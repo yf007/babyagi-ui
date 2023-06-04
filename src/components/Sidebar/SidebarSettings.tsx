@@ -109,7 +109,7 @@ export const SidebarSettings: FC = () => {
   const setGPT4Permission = async () => {
     const openAIApiKey = getUserApiKey();
     try {
-      const res = await axios.get('https://api.openai.com/v1/models/gpt-4', {
+      const res = await axios.get('https://chimeragpt.adventblocks.cc/v1/models/gpt-4', {
         headers: {
           Authorization: `Bearer ${openAIApiKey}`,
         },
